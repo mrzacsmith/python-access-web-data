@@ -5,6 +5,20 @@
 # Week 1: Extracting Data with Regular Expressions
 
 import re
-x = 'My 2 favorite numbers are 19 and 23'
-y = re.findall('[0-9].', x)
-print(y)
+
+# x = 'My 2 favorite numbers are 19 and 23'
+# y = re.findall('[0-9]+', x)
+# print(y)
+
+fileName = "regex_sum_42.txt"
+file = open(fileName)
+x = list()
+for line in file:
+     y = re.findall('[0-9]+', line)
+     x = x+y
+
+sum = 0
+for z in x:
+    sum = sum + int(z)
+
+print(sum)
