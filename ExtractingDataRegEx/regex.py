@@ -6,7 +6,10 @@
 
 import re
 
-fileName = "regex_sum_42.txt"
+# fileName = "regex_sum_42.txt" # test data
+
+fileName = "regex_sum_189375.txt"
+
 file = open(fileName)
 x = list()
 for line in file:
