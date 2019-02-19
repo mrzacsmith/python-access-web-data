@@ -9,7 +9,11 @@ ctx.verify_mode = ssl.CERT_NONE
 
 # Get URL from user
 url = input('Enter - ')
-html = urllib.request.urlopen(url).read()
+html = urllib.request.urlopen(url, context=ctx).read()
+
+# This will print the entire web page showing all html and data
+# print(html)
+
 soup = BeautifulSoup(html, 'html.parser')
 
 tags = soup('a')
