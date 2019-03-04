@@ -16,7 +16,8 @@ for i in range(int(count)):
 	soup = BeautifulSoup(html, 'html.parser')
 	tags = soup('a')
 	number = 0
-	for tag in tags:
+	for tag in tags:ls
+		
 		number += 1
 		if number == int(position):
 			url = tag.get('href')
