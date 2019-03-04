@@ -7,10 +7,13 @@ target_port = 80
 client = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 
 # send some data
-client.sendto("AAABBBCCC", (target_host, target_port))
+message = "AAABBBCCC".encode()
+client.sendto(message, (target_host, target_port))
 
 # recieve some data
-data,  addr = client.recv(4096)
+data = client.recvfrom(4096)
 
 # print data and close
 print(data)
+
+client.close()
