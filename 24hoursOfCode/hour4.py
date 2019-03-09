@@ -1,0 +1,25 @@
+string_to_modify1 = 'trivi is an amazing artist!'
+string_to_modify2 = 'tRivi CAN create abstrat ARt and mOre!'
+
+
+print('String 1: ' + string_to_modify1)
+print('String 2: ' + string_to_modify2)
+print('~~~~~~~~~~~~~~~~~~~~~~~~~~~~~')
+print('.uppper: ' + string_to_modify1.upper())
+print('.upper: ' + string_to_modify2.upper())
+print('.lower: ' + string_to_modify2.lower())
+print('.capitalize: ' + string_to_modify1.capitalize())
+print('.capitalize: ' + string_to_modify2.capitalize()) 
+print('.title: ' + string_to_modify1.title())
+print('.title: '+ string_to_modify2.title())
+print('.length 1: ' + str(len(string_to_modify1)))
+print('.length 2: ' + str(len(string_to_modify2)))
+print('.islower 1:' + str(string_to_modify1.islower()))
+print('.islower 2:' + str(string_to_modify2.islower()))
+print('.lstrip() 1: ' + string_to_modify1.lstrip())
+print('.max 1: ' + str(max(string_to_modify1)))
+print('.max 2: ' + str(max(string_to_modify2)))
+print('.min 1: ' + str(min(string_to_modify1)))
+print('.min 2: ' + str(min(string_to_modify2)))
+print('.swapcase: ' + string_to_modify1.swapcase())
+print('.swpacase: ' + string_to_modify2.swapcase())
