@@ -13,7 +13,9 @@ upload_destination = ""
 port    = 0
 
 def usage():
-
+    print('BHP Net Tool')
+    print('')
+    print('Usage: ')
 
 def main():
 
